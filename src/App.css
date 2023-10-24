@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main_container{
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  
+}
+.main_container_inner{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.nav-container{
+  padding-right: 20px;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-bottom: 15px;
+  background-color: #28231D;
+}
+.nav{
+  width: 100%;
+  height: 100%;
+  padding-left: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.ticketscount {
+  border-radius: 10px;
+  padding: 5px;
+  margin-right: 50px;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ticket-number,
+.ticket-label {
+  margin: 3px; 
 }
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.cross{
+  cursor: pointer;
+}
+.dropdown{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.App{
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+.left{
+  margin-left: 20px;
+  
+}
+
+.right{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.right ul{
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  list-style: none;
+}
+.right ul li{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  
+}
+
+.right ul li img{
+  width: 3.5%;
+  height: 40px;
+
+}
+
+.available{
+  filter: invert(100%) sepia(100%) saturate(14%) hue-rotate(212deg) brightness(104%) contrast(104%);
+}
+.unavailable{
+  filter: invert(15%) sepia(99%) saturate(7455%) hue-rotate(2deg) brightness(101%) contrast(106%);
+}
+
+.yourselection{
+  filter: invert(95%) sepia(41%) saturate(6882%) hue-rotate(54deg) brightness(90%) contrast(108%);
+}
+
